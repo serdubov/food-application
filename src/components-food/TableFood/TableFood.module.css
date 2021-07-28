@@ -1,0 +1,4 @@
+.tableCell {
+  display: flex;
+  justify-content: space-between;
+}

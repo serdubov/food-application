@@ -1,0 +1,447 @@
+*{margin:0;
+padding: 0;}
+
+body {
+  margin:0;
+  background-color: #e7f6ff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.bodyApp {
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  max-width: 1632px;
+  height:fit-content;
+  padding:10px;
+  margin: 50px auto;
+}
+
+.headerApp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:25px;
+  border-bottom:1px solid #e6e6e6;
+  
+}
+
+.headerLogoText {
+  margin-left:40px;
+}
+
+h1 {
+  color: #0B2349;
+}
+
+.headerApp span {
+  font-size: 14px;
+  font-weight: 500;
+  opacity: .5;
+}
+
+.headerLogo {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.headerAdministration i {
+  font-size: 20px;
+  margin-left:10px;
+  color:#0B2349;
+}
+
+.headerAdministration {
+  opacity:.7;
+}
+
+
+.headerAdministration:hover {
+  opacity: 1;
+}
+
+.headerTextPart {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.headerNavigation {
+  margin-right: 200px;
+}
+
+.headerNavigation li {
+  margin:10px;
+  padding:10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #0B2349;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.headerNavigation li:after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: #0B2349;
+  transition: width .2s ease-in-out;
+}
+
+.headerNavigation li:hover:after {
+  width: 100%;
+  opacity:1;
+}
+
+.headerAdministration {
+  display: flex;
+  font-size: 15px;
+  font-weight: bold;
+  color: #0B2349;
+  cursor: pointer;
+}
+
+.headerApp ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.mainTable {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin:50px;
+}
+
+.compareBlock {
+  display:flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+}
+
+.compareBlock li {
+  list-style-type: none;
+  padding:5px;
+  margin-left:15px;
+}
+
+.compareBlock input {
+  margin-right:6px;
+  padding:5px;
+  outline:none;
+  color:black;
+  border-radius: 5px;
+  border:none;
+  box-shadow: inset 2px 2px 3px rgba(154, 147, 140, 0.5);
+}
+
+.addFood {
+ 
+  margin-right:20px;
+  border-radius: 15px;
+  background: #e7f6ff;
+  filter: drop-shadow(3px 3px 5px #949494);
+  height:fit-content;
+}
+
+.addFood h5 {
+  padding-top: 18px;
+  padding-left:18px;
+}
+
+.addParameter h5 {
+  padding-top: 18px;
+  padding-left:18px;
+}
+
+.addFooditem {
+  margin:14px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5);
+}
+
+.addFooditem li {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin:6px;
+  font-weight: 500;
+  color:#0B2349;
+  
+}
+
+.addFooditem li i {
+  color:#0B2349;
+  margin-right: 5px;
+  transition: .1s;
+}
+
+.addFooditem li i:hover {
+  color:#0B2349;
+  margin-right: 5px;
+  transform: scale(1.1);
+  transition: .1s;
+  cursor: pointer;
+}
+
+
+.foodSearch {
+  display:flex;
+  align-items: center;
+  padding:18px;
+}
+
+.foodSearch i {
+  opacity:.7;
+}
+
+.foodSearch i:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.parameterSearch i {
+  opacity:.7;
+}
+
+.parameterSearch i:hover {
+  opacity:1;
+  cursor: pointer;
+}
+
+.addParameter {
+  margin-right:20px;
+  border-radius: 15px;
+  background: #e7f6ff;
+  filter: drop-shadow(3px 3px 5px #949494);
+  height:fit-content;
+}
+
+.parameterSearch {
+  display:flex;
+  align-items: center;
+  padding:18px;
+}
+
+.outputBlock {
+  align-items: flex-start;
+  margin-top:-2px;
+  margin-left:100px;
+  padding-left:50px;
+  overflow-x:auto;
+  
+}
+
+table {
+  text-align: center;
+   border-collapse: separate;
+   empty-cells: hide;
+   
+}
+
+table i {
+  margin-left:5px;
+  color:#0B2349;
+}
+
+table i:hover {
+  color:red;
+  cursor: pointer;
+}
+
+
+th, td {
+  border: 2px solid #e7f6ff;
+  border-radius: 5px;
+  padding:20px;
+  color:#0B2349;
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5);
+}
+
+.foodIndicator input {
+  width:30px;
+  border-radius:3px;
+  outline: none;
+  padding:2px;
+  border:none;
+  color: #4d4d4d;
+  font-weight: bold;
+  font-size: 12px;
+  box-shadow: inset 3px 3px 6px rgba(154, 147, 140, 0.5);
+}
+
+.freeField {
+  font-size: 10px;
+  font-weight: bold;
+  margin-right:5px;
+}
+
+.emptyCell {
+  background-color: white;
+  color:white;
+  border:none;
+  box-shadow:none;
+}
+
+.showCletchatka {
+  display: none;
+}
+
+.showCletchatka.active {
+  display: table-cell;
+  align-items: center;
+  transition: .2s;
+}
+
+.showCletchatka.active:hover {
+  background-color: #e7f6ff;
+  cursor: pointer;
+  transition: .2s;
+}
+
+
+.showProtein {
+  display: none;
+}
+
+.showProtein.active {
+  display: table-cell;
+  align-items: center;
+  transition: .2s;
+}
+
+.showProtein.active:hover {
+  background-color: #e7f6ff;
+  cursor: pointer;
+  transition: .2s;
+}
+
+
+.showBev {
+  display: none;
+}
+
+.showBev.active {
+  display: table-cell;
+  align-items: center;
+  transition: .2s;
+}
+
+.showBev.active:hover {
+  background-color: #e7f6ff;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.showUglevod {
+  display: none;
+}
+
+.showUglevod.active {
+  display: table-cell;
+  align-items: center;
+  transition: .2s;
+}
+
+.showUglevod.active:hover {
+  background-color: #e7f6ff;
+  cursor: pointer;
+  transition: .2s;
+}
+
+
+.foodIndicator {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.containerIndicator {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.Indicator {
+  width:10px;
+  height:10px;
+  background-color: green;
+  margin-top:3px;
+  margin-right:13px;
+  border-radius: 50%;
+}
+
+.inFoodTitle {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.cletchIndicator {
+  width:10px;
+  height:10px;
+  background-color: aquamarine;
+  margin:5px;
+  border-radius: 50%;
+}
+
+.BevIndicator {
+  width:10px;
+  height:10px;
+  background-color: purple;
+  margin:5px;
+  border-radius: 50%;
+}
+
+.showPlaces {
+  transition: .2s;
+}
+.showPlaces i:hover {
+  color:#0B2349;
+}
+
+
+.showPlaces:hover {
+  transition: .2s;
+  background-color: #e7f6ff;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.calculatePlaces {
+  transition: .2s;
+}
+.calculatePlaces i:hover {
+  color:#0B2349;
+}
+
+
+.calculatePlaces:hover {
+  transition: .2s;
+  background-color: #e7f6ff;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.flexCletchRait{
+  display: flex;
+  justify-content: space-between;
+}
+
+.cletchRating {
+ 
+}
+
+.protRating {
+
+}
+
+.bevRating {
+
+}
